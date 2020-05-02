@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Sesame Web Controller</title>
+    </head>
+    <body>
+        <h1>Sesame list</h1>
+        <tr>
+            <th>name</th>
+        </tr>
+        {% for sesames in sesames %}
+        <tr>
+            <td>{{ sesames.name }}</td>
+        </tr>
+        {% endfor %}
+    </body>
+</html>
