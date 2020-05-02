@@ -1,1 +1,1 @@
-python3 book_project/manage.py runserver 0:8080
+python3 webcontroller/manage.py runserver 0:8080
