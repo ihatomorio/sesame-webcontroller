@@ -1,16 +1,27 @@
-<html>
-    <head>
-        <title>Sesame Web Controller</title>
-    </head>
-    <body>
-        <h1>Sesame list</h1>
-        <tr>
-            <th>name</th>
-        </tr>
-        {% for sesames in sesames %}
-        <tr>
-            <td>{{ sesames.name }}</td>
-        </tr>
-        {% endfor %}
-    </body>
-</html>
+{% extends "base.html" %}
+
+<!-- page title -->
+{% block title %} - Sesames{% endblock %}
+
+<!-- Custom styles for this page -->
+{% block pagecss %}
+{% endblock %}
+
+<!-- Page level plugins -->
+{% block pageplugin %}
+{% endblock %}
+
+<!-- Begin Page Content -->
+{% block content %}
+<h1>Sesame list</h1>
+<tr>
+    <th>name</th>
+</tr>
+{% for sesames in sesames %}
+<tr>
+    <td>{{ sesames.name }}</td>
+</tr>
+{% endfor %}
+
+{% endblock %}
+<!-- End of Page Content -->
