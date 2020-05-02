@@ -7,5 +7,5 @@ from .models import Sesame
 
 # @login_required
 def sesame_list(request):
-    sesames = Sesame.objects.filter(owner=request.user).order_by('-id')
+    sesames = Sesame.objects.all() #.filter(owner=request.user).order_by('-id')
     return render(request, 'sesame_list.html', {'sesames': sesames})
